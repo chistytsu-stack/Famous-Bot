@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "offbot",
     version: "1.0",
-    author: "𝐀𝐒𝐈𝐅 𝐱𝟔𝟗",
+    author: "Meheraz",
     countDown: 45,
     role: 0,
     shortDescription: "Turn off bot",
@@ -11,10 +11,10 @@ module.exports = {
     guide: "{p}{n}"
   },
   onStart: async function ({event, api}) {
-    const permission = [ "61567840496026" ];
+    const permission = [ "100023789902793" ];
   if (!permission.includes(event.senderID)) {
-    api.sendMessage("╔════ஜ۩۞۩ஜ═══╗\nYou don't have permission to use this command.\n═══ஜ۩۞۩ஜ═══╝", event.threadID, event.messageID);
+    api.sendMessage("✦━━━━━━━━━━━━━━━━━✦\n\n You don't have permission to use this command.\n\n✦━━━━━━━━━━━━━━━━━✦", event.threadID, event.messageID);
     return;
   }
-    api.sendMessage("╔════ஜ۩۞۩ஜ═══╗\nsuccessfully Turned Off System ✅\═══ஜ۩۞۩ஜ═══╝",event.threadID, () =>process.exit(0))}
+    api.sendMessage("✦━━━━━━━━━━━━━━━━━✦\n\n Successfully Turned Off System ⊙ \n\n✦━━━━━━━━━━━━━━━━━✦",event.threadID, () =>process.exit(0))}
 };
